@@ -1,11 +1,5 @@
 import React from 'react';
-const TaskFile = ({
-  taskInput,
-  handleInputChange,
-  addTaskToList,
-  addTasksToMainList,
-  taskList,
-}) => {
+const TaskFile = ({taskInput,handleInputChange,addTaskToList, addTasksToMainList,taskList,}) => {
   return (
     <div className="task-file">
       <h2>Add Your Tasks</h2>
@@ -18,9 +12,7 @@ const TaskFile = ({
           </div>
         ))}
       </div>
-      <button onClick={addTasksToMainList} className="final-add-btn">
-        Add All Tasks
-      </button>
+      <button onClick={addTasksToMainList} className="final-add-btn">Add All Tasks</button>
     </div>
   );
 };
