@@ -1,7 +1,8 @@
 import  { useState } from 'react';
+import NavBar from './NavBar';
 import TaskFile from "./TaskFile";
 import ShortCard from "./ShortCard";
-import "./App.css"
+import Text from "./Text";
 const App = () => {
   const [tasks, setTasks] = useState([]); 
   const [isCardOpen, setIsCardOpen] = useState(false); 
@@ -23,6 +24,8 @@ const addTaskToList = () => {
   };
   return (
     <div className="app-container">
+      <NavBar  />
+      <Text/>
       <h1>Task Manager</h1>
       <button className="add-task-btn" onClick={() => setIsCardOpen(true)}>
         <span>+</span> Add Task
