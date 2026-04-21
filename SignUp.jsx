@@ -9,7 +9,7 @@ const SignUpForm = ({ onSignUpSuccess }) => {
     onSignUpSuccess(username);
   };
 
-  return (
+  return( 
     <div className="signup-form ml-8 ">
       <h2 className="text-xl font-semibold mb-16">Sign Up</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
