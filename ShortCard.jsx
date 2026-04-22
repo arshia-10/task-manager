@@ -6,7 +6,7 @@ const ShortCard = ({ tasks, onEdit, onDelete }) => {
           {task.map((taskItem, taskIndex) => (
             <div key={taskIndex} className="task-item flex justify-between items-center">
               <p className="flex-grow text-xl font-medium"> 
-                {taskItem}
+                {taskItem} 
               </p>
               <div className="flex space-x-3">
                 <button className="text-blue-600 hover:text-blue-800 font-bold text-lg" onClick={() => onEdit(index, taskIndex, taskItem)} >
